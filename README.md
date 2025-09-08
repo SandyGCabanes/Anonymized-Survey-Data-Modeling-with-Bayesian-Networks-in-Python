@@ -53,7 +53,7 @@ The goal: allow analysis, sharing, and portfolio demonstration **without exposin
    - Set ess ranges for priors.
    - Loop using ess ranges in bayesian network structure via **HillClimbSearch**. 
    - Extract and audit for isolated nodes for each loop.  Replace ess ranges if isolated nodes still present.
-   - Below is the resulting network. ![Bayesian network graph from pgmpy with priors](loaded_model_1500_730pm.png)
+   - Below is the resulting network. <br>![Bayesian network graph from pgmpy with priors](loaded_model_1500_730pm.png)
    - Fit conditional probability tables using Bayesian Estimator.  (MLE as fallback in case distribution check fails.)
    
 3. **Synthesize Dataset**
