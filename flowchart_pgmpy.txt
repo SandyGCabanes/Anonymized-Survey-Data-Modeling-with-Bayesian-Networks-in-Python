@@ -1,6 +1,6 @@
               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
               SYNTHETIC DATASET GENERATION USING PYTHON PGMPY PACKAGE FOR SURVEY DATA
-	      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                  Uses : Bayesian Network, HillClimbSearch, BDeu (Network model)
                         BayesianEstimator, MaximumLikelihoodEstimator (CPD) 
                         Bayesian Model Sampling (Synth generation)
@@ -54,8 +54,9 @@
                                 ┌───────────────────────┐                                                                  
                                 │   Salary by Educ ok   │                                                                  
                                 │ Synth dataset final   │~~~~~~~ Synthetic dataset processing
-				└───────── END ─────────┘                                                                  
+			                	└───────── END ─────────┘                                                                  
 
 Originated by: Sandy G. Cabanes
 Beyond surveys. Data-driven decisions.
+
 Draft Flowchart app:  https://github.com/SandyGCabanes/Unicode-Flowchart-Builder-App
