@@ -24,8 +24,8 @@ The goal: allow analysis, sharing, and portfolio demonstration **without exposin
 - **Salary vs. education stacked bar plots** indicate matching splits.
 - The random entries for a few specific ranges in Salary will be deleted among Career Stage == Students and Educational Status == Secondary education.
 - Note that original dataset also contains Salary entries for Students(Education) or Students/Career Break(Career Stage).
-- ![Original salary vs. education splits](sal_vs_educ_actual.png)
-- ![Synthetic salary vs. education splits](sal_vs_educ_synth.png)
+- ![Original salary vs. education splits](salary_by_educstat_original.png)
+- ![Synthetic salary vs. education splits](salary_by_educstat_synthetic.png))
 ---
 
 ## Background  
