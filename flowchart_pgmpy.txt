@@ -1,0 +1,61 @@
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              SYNTHETIC DATASET GENERATION USING PYTHON PGMPY PACKAGE FOR SURVEY DATA
+	      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 Uses : Bayesian Network, HillClimbSearch, BDeu (Network model)
+                        BayesianEstimator, MaximumLikelihoodEstimator (CPD) 
+                        Bayesian Model Sampling (Synth generation)
+						
+┌────────START──────────┐                                                                                                  
+│    Import packages    │                                                                                                  
+│    Pre-process data   │                                                                                                  
+└───────────────────────┘                                                                                                  
+            │                                                                                                              
+            ▼                                                                                                              
+┌───────────────────────┐       ┌────PARAMETER TUNING───┐                                                                  
+│   Global NB starter   │       │   ESS range (priors)  │                                                                  
+│       Global ek       │──────►│      specify          │ ◄──────────────────────────────────┐                              
+└───────────────────────┘       └───────────────────────┘                                    ▴                             
+                                            │                                                │                              
+                                            ▼                                                │                              
+                                ┌───────────────────────┐       ┌───────────────────────┐    │                              
+                                │     Loop ESS sweep    │       │ With isolated nodes   │───►┘                              
+                                │     Isolated nodes?   │──────►│*Loop to: ESS range    │                                  
+                                └───────────────────────┘       └───────────────────────┘                                  
+                                            │                                                                              
+                                            ▼                                                                              
+                                ┌───────────────────────┐                                                                  
+                                │No isolated n → Fit CPD│                                                                  
+                                │  Bayesian Estimator   │ ◄──────────────────────────────────┐                                 
+                                │(OR Max Likelihood Est)│                                    ▴                              
+                                └───────────────────────┘                                    │                              
+                                            │                                                │                              
+                                            ▼                                                │                              
+                                ┌─────PRIVACY CHECK─────┐       ┌───────────────────────┐    │                              
+                                │     Synthetic data    │       │    With duplicates    │    │                              
+                                │      Duplicates?      │──────►│                       │───►┥ 
+                                │      vs. Original     │       │   *Loop to: Fit CPD   │    │                              
+                                └───────────────────────┘       └───────────────────────┘    │                              
+                                            │                                                ▴                              
+                                            ▼                                                │                              
+                                ┌───────────────────────┐       ┌───────────────────────┐    │                              
+                                │     No duplicates     │       │ Original distributions│    │                              
+                                │  Distributions match? │──────►│      not matched      │───►┥                              
+                                │     vs. Original      │       │   *Loop to: Fit CPD   │    │                              
+                                └───────────────────────┘       └───────────────────────┘    │                              
+                                            │                                                ▴                              
+                                            ▼                                                │                              
+                                ┌──── SANITY CHECKS ────┐       ┌───────────────────────┐    │                              
+                                │  Distributions match  │       │   Salary by Educstat  │    │                              
+                                │           ↓           │──────►│       not match       │───►┘                              
+                                │   Salary by Educstat  │       │   *Loop to: Fit CPD   │                                  
+                                └───────────────────────┘       └───────────────────────┘                                  
+                                            │                                                                              
+                                            ▼                                                                              
+                                ┌───────────────────────┐                                                                  
+                                │   Salary by Educ ok   │                                                                  
+                                │ Synth dataset final   │~~~~~~~ Synthetic dataset processing
+				└───────── END ─────────┘                                                                  
+
+Originated by: Sandy G. Cabanes
+Beyond surveys. Data-driven decisions.
+Draft Flowchart app:  https://github.com/SandyGCabanes/Unicode-Flowchart-Builder-App
