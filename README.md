@@ -1,6 +1,5 @@
 # Synthetic-Dataset-Generation-from-Surveys-Using-Python-Bayesian-Network
 Synthetic dataset generation from survey data using python's pgmpy package and Bayesian models
-# Synthetic Data Generation & Validation Using PYTHON's pgmpy Package 
 
 ## Objective  
 Turn sensitive survey responses into **privacy‑safe synthetic datasets** while keeping the statistical patterns intact.  
@@ -18,8 +17,8 @@ The goal: allow analysis, sharing, and portfolio demonstration **without exposin
 - Comparable distributions per column: based on **Side‑by‑side frequency distribution plots** for every column, comparing original vs synthetic data.
 - **Click here** to see all the plots. [Distribution Plots of Original and Synthetic Data](Distribution of Original vs. Synthetic Datasets.pdf)
   <b>
-- ![Age Group: Original vs. Synthetic](plots_dir/age_grp_20250906_180543.PNG)
-- ![Educational Status: Original vs. Synthetic](plots_dir/educstat_20250906_180543.PNG)
+- ![Age Group: Original vs. Synthetic](blob/main/plots_dir/age_grp_20250906_180543.png)
+- ![Educational Status: Original vs. Synthetic](blob/main/plots_dir/educstat_20250906_180543.PNG)
 
 
 - **Salary vs. education stacked bar plots** indicate matching splits.
