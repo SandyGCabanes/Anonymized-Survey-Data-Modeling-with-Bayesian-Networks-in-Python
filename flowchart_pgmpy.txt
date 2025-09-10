@@ -57,6 +57,7 @@
 			                	└───────── END ─────────┘                                                                  
 
 Originated by: Sandy G. Cabanes
-Beyond surveys. Data-driven decisions.
+Beyond Surveys. Data-Powered Decisions.
 
 Draft Flowchart app:  https://github.com/SandyGCabanes/Unicode-Flowchart-Builder-App
+
