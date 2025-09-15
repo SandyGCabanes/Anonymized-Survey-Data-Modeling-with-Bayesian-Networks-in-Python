@@ -2,8 +2,8 @@
 Synthetic dataset generation from survey data using python's pgmpy package and Bayesian models
 
 ## Why This Project Exists:  
-Turn sensitive survey responses into **privacy‑safe synthetic datasets** while keeping the statistical patterns intact.  
-The goal: allow analysis, sharing, and portfolio demonstration **without exposing any respondent’s real data**.
+This workflow turns survey responses into privacy‑safe synthetic datasets while keeping the statistical patterns intact.
+The goal: allow analysis, sharing, and portfolio demonstration without exposing any respondent’s real data.
 
 ---
 
