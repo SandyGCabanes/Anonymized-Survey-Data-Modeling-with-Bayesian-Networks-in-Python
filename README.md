@@ -1,15 +1,15 @@
 # Synthetic-Dataset-Generation-from-Surveys-Using-Python-Bayesian-Network
 Synthetic dataset generation from survey data using python's pgmpy package and Bayesian models
 
-## Objective  
+## Why This Project Exists:  
 Turn sensitive survey responses into **privacy‑safe synthetic datasets** while keeping the statistical patterns intact.  
 The goal: allow analysis, sharing, and portfolio demonstration **without exposing any respondent’s real data**.
 
 ---
 
-## Action from Results  
-- Share the synthetic dataset outputs publicly without any privacy risk.
-- Add to workflow for the next wave of surveys in the Data Engineering Pilipinas group.
+## What This Creates and Whom This is For:  
+- Synthetic dataset outputs for public analysis without privacy risk.
+- Part of my current workflow as survey leader of the Data Engineering Pilipinas group.
   
 ---
 
