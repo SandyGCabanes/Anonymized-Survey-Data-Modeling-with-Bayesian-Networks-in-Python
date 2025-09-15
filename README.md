@@ -80,9 +80,6 @@ The goal: allow analysis, sharing, and portfolio demonstration **without exposin
    - Save plots as PNGs and embed in an **HTML report** for easy review. ![Distribution of Original and Synthetic]("Distribution of Original vs. Synthetic Datasets.pdf")
    - Quick sanity checks: Salary by Education Status.
    
-   ![Original Salary by Education Status](salary_by_educstat_original.png)
-   
-   ![Synthetic: Salary by Education Status](salary_by_educstat_synthetic.png)
 
 ---
 Sandy G. Cabanes
