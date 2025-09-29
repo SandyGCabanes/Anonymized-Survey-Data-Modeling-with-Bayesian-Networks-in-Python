@@ -38,7 +38,7 @@ Synthetic dataset generation from survey data using python's pgmpy package and B
 
 ## Workflow: 
 
-- [Click here to see workflow](flowchart_pgmpy.txt)
+- ![workflow](workflow.png)
   <b>
 1. **Load & Preprocess**  
    - Read raw survey CSV, already cleaned of identifiers.  
