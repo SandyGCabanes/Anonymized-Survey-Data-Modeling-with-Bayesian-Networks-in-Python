@@ -15,7 +15,7 @@ Synthetic dataset generation from survey data using python's pgmpy package and B
 
 ## Findings  
 - Comparable distributions per column: based on **Side‑by‑side frequency distribution plots** for every column, comparing original vs synthetic data.
-- **Click here** to see all the plots. Distribution of Original vs. Synthetic Datasets.pdf
+- [**Click here** to see all the plots.](https://github.com/SandyGCabanes/Anonymized-Survey-Data-Modeling-with-Bayesian-Networks-in-Python/blob/main/Distribution%20of%20Original%20vs.%20Synthetic%20Datasets.pdf)
   <b>
 - ![Age Group: Original vs. Synthetic](age_grp_20250906_180543.png)
 - ![Educational Status: Original vs. Synthetic](educstat_20250906_180543.png)
