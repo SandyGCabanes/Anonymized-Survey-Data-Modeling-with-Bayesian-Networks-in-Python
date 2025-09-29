@@ -27,19 +27,19 @@ for i in range(len(syn_df)):
     
     if age_grp == '<19':
         syn_df.loc[i, 'age'] = np.random.randint(16, 20)
-    elif age_grp == '20???24':
+    elif age_grp == '20 to 24':
         syn_df.loc[i, 'age'] = np.random.randint(20, 25)
-    elif age_grp == '25???29':
+    elif age_grp == '25 to 29':
         syn_df.loc[i, 'age'] = np.random.randint(25, 30)
-    elif age_grp == '30???34':
+    elif age_grp == '30 to 34':
         syn_df.loc[i, 'age'] = np.random.randint(30, 35)
-    elif age_grp == '35???39':
+    elif age_grp == '35 to 39':
         syn_df.loc[i, 'age'] = np.random.randint(35, 40)
-    elif age_grp == '40???44':
+    elif age_grp == '40 to 44':
         syn_df.loc[i, 'age'] = np.random.randint(40, 45)
-    elif age_grp == '45???49':
+    elif age_grp == '45 to 49':
         syn_df.loc[i, 'age'] = np.random.randint(45, 50)
-    elif age_grp == '50???54':
+    elif age_grp == '50 to 54':
         syn_df.loc[i, 'age'] = np.random.randint(50, 55)
     elif age_grp == '55+':
         syn_df.loc[i, 'age'] = 55
@@ -72,6 +72,9 @@ def replace_codeasblank(val, col):
 # Apply replacement across the entire DataFrame
 syn_df_rep = syn_df_rep.apply(lambda col: [replace_codeasblank(val, col.name) for val in col])
 print ("Replaced CODEASBLANK")
+
+
+
 
 # %%
 print("At this point, we use syn_df_rep.")
@@ -115,6 +118,10 @@ print(salary_by_educ)
 import matplotlib.pyplot as plt
 import seaborn as sns 
 
+
+
+
+
 # %%
 # Plot salary by educstat to see if the Secondary school student salaries reflect actual data
 
@@ -126,6 +133,8 @@ plt.legend(title='Education Status', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.tight_layout()
 #plt.show()
 plt.savefig("salary_by_educ.png")   
+
+
 
 # %%
 # career stage: Check career stage vs. salary and student in career stage
@@ -145,6 +154,7 @@ print("Check salary of 'Student/ New grad/ Career Break'")
 print(student_career)
 
 
+
 # %%
 # salary: Remove the added letters to the higher ranges
 
@@ -153,6 +163,8 @@ salary_map = {"a.100,001 to 125,000":"100,001 to 125,000",
               "c.250,001 and above":"250,001 and above"}
 syn_df_rep['salary'] = syn_df_rep['salary'].apply(lambda v: salary_map[v] if v in salary_map else v)
 print("Removed the added letters to the higher salary ranges")
+
+
 
 # %%
 syn_df_rep.to_csv("syn_df_rep.csv", index = False)
@@ -170,6 +182,7 @@ survey_questions = dfheaders.iloc[1]
 df_dict = dict(zip(var_names, survey_questions))
 syn_df_for_sharing.rename(columns=df_dict, inplace=True)
 print("Final step:Actual column headers renamed to match Google Sheet responses.")
+
 
 
 # %%
