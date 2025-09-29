@@ -15,7 +15,7 @@ Synthetic dataset generation from survey data using python's pgmpy package and B
 
 ## Findings  
 - Comparable distributions per column: based on **Side‑by‑side frequency distribution plots** for every column, comparing original vs synthetic data.
-- [**Click here** to see all the plots.](https://github.com/SandyGCabanes/Anonymized-Survey-Data-Modeling-with-Bayesian-Networks-in-Python/blob/main/Distribution%20of%20Original%20vs.%20Synthetic%20Datasets.pdf)
+- [**Click here** to see the side-by-side comparison of distributions for all the variables aside from age group and educational status.](https://github.com/SandyGCabanes/Anonymized-Survey-Data-Modeling-with-Bayesian-Networks-in-Python/blob/main/Distribution%20of%20Original%20vs.%20Synthetic%20Datasets.pdf)
   <b>
 - ![Age Group: Original vs. Synthetic](age_grp_20250906_180543.png)
 - ![Educational Status: Original vs. Synthetic](educstat_20250906_180543.png)
@@ -77,7 +77,7 @@ Synthetic dataset generation from survey data using python's pgmpy package and B
 
 6. **Visualization & Export**  
    - Loop through all variables, generating **side‑by‑side bar plots** (Original vs Synthetic).  
-   - Save plots as PNGs and embed in an **HTML report** for easy review. ![Distribution of Original and Synthetic]("Distribution of Original vs. Synthetic Datasets.pdf")
+   - Save plots as PNGs and embed in an **HTML report** for easy review. [Distribution of Original and Synthetic](https://github.com/SandyGCabanes/Anonymized-Survey-Data-Modeling-with-Bayesian-Networks-in-Python/blob/main/Distribution%20of%20Original%20vs.%20Synthetic%20Datasets.pdf)
    - Quick sanity checks: Salary by Education Status.
    
 
