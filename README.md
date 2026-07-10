@@ -1,5 +1,5 @@
 # Synthetic-Dataset-Generation-from-Surveys-Using-Python-Bayesian-Network
-Synthetic dataset generation from survey data using python's pgmpy package and Bayesian models
+2025 Synthetic dataset generation from 2024 survey data using python's pgmpy package and Bayesian models
 
 ## Why This Project Exists:  
 - This workflow turns survey responses into privacy‑safe synthetic datasets while keeping the statistical patterns intact.
